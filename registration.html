@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - Book Link</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .foot-im {
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div id="header-row" class="row bg-success">
+            <div class="col">
+                <h1>Book Link</h1>
+            </div>
+        </div>
+        <div id="menubar-row" class="row" style="background-color: #afe1af;">
+            <div class="col">
+                <nav class="navbar navbar-expand-sm">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav">
+                                <li class="nav-item mx-4 my-1 bg-success rounded-2">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item mx-4 my-1 bg-success rounded-2">
+                                    <a class="nav-link" href="contact.html">Contact Us</a>
+                                </li>
+                                <li class="nav-item mx-4 my-1 bg-success rounded-2">
+                                    <a class="nav-link" href="bookstore.html">Bookstore</a>
+                                </li>
+                                <li class="nav-item mx-4 my-1 bg-success rounded-2">
+                                    <a class="nav-link" href="mylibrary.html">My Library</a>
+                                </li>
+                                <li class="nav-item mx-4 my-1 bg-success rounded-2">
+                                    <a class="nav-link" href="registration.html">Registration</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2 bg-light"></div>
+            <div class="col-sm-8">
+                <div class="container-fluid p-4">
+                    <h2>Registration</h2>
+                    <form>
+                        <fieldset>
+                            <legend>Enter your information</legend>
+                            <table class="table table-borderless">
+                                <tr>
+                                    <td>
+                                        <label class="control-label" for="Name">User Name: </label>
+                                    </td>
+                                    <td>
+                                        <input class="form-control" type="text" id="Name" name="Name" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label class="control-label" for="Email">Email: </label>
+                                    </td>
+                                    <td>
+                                        <input class="form-control" type="email" id="Email" name="Email" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label class="control-label" for="password">Password: </label>
+                                    </td>
+                                    <td>
+                                        <input class="form-control" type="password" id="password" name="password"
+                                            required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label class="control-label" for="password">Confirm Password: </label>
+                                    </td>
+                                    <td>
+                                        <input class="form-control" type="password" id="password" name="password"
+                                            required>
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                        <br>
+                        <input type="submit" class="btn btn-outline-success px-4" value="Submit">
+                        <input type="reset" class="btn btn-outline-success px-4" value="Clear">
+                    </form>
+                </div>
+            </div>
+            <div class="col-sm-2 bg-light p-4">
+                <h2>Already have an account?</h2>
+                <!-- modal -->
+                <button type="button" class="btn btn-success px-4" data-bs-toggle="modal" data-bs-target="#LogInModal">
+                    Log In Now
+                </button>
+                <div class="modal" id="LogInModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Your Info</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <table class="table table-borderless">
+                                        <tr>
+                                            <td>
+                                                <label class="control-label" for="Name">User Name: </label>
+                                            </td>
+                                            <td>
+                                                <input class="form-control" type="text" id="Name" name="Name" required>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="control-label" for="password">Password: </label>
+                                            </td>
+                                            <td>
+                                                <input class="form-control" type="password" id="password"
+                                                    name="password" required>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#">
+                                    <button class="btn btn-success px-4" type="button" data-bs-dismiss="modal">Log
+                                        In</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-row" class="row bg-primary">
+            <div class="col-lg-6">
+                <nav class="navbar navbar-expand-sm">
+                    <div class="container-fluid">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <span class="navbar-text h3 mx-3 my-1">Contact: </span>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <img class="foot-im" src="image/email.png" alt="">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <img class="foot-im" src="image/messenger.png" alt="">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <img class="foot-im" src="image/whatsapp.png" alt="">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <img class="foot-im" src="image/skype.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-lg-6">
+                <nav class="navbar navbar-expand-sm">
+                    <div class="container-fluid">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <span class="navbar-text h3 mx-3 my-1">Follow us on: </span>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <img class="foot-im" src="image/facebook.png" alt="">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <img class="foot-im" src="image/instagram.png" alt="">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <img class="foot-im" src="image/linkedin.png" alt="">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <img class="foot-im" src="image/twitter.png" alt="">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <img class="foot-im" src="image/youtube.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
